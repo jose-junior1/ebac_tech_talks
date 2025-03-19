@@ -15,7 +15,7 @@
         <div class="container">
             <img class="hero__logo" src="images/ebac_logo.svg" alt="Logo Ebac">
             <p class="hero__text">
-                O maior evento de tecnologia do Brasil começa em 10d 12h 20m 15s
+                O maior evento de tecnologia do Brasil começa em <span id="contador"></span>
             </p>
             <div class="infos-bar">
                 <ul class="infos-bar__infos">
@@ -29,7 +29,7 @@
                     </li>
                     <li class="infos-bar__infos__item">
                         <b>Quando</b>
-                        24/03/2025 às 19:00
+                        23/04/2025 às 19:00
                     </li>
                 </ul>
                 <a href="#" class="button button--primary">
@@ -39,7 +39,7 @@
         </div>
     </header>
     <section class="event event--frontend">
-        <div class="container">
+        <div class="container"  data-aos="fade-right">
             <div class="event__details">
                 <h2 class="event__details__title">Front-End</h2>
                 <p class="event__details__description">
@@ -50,20 +50,20 @@
             <img class="event__image" src="images/frontend.png" alt="Front-End">
         </div>
     </section>
-    <section class="event event--ui-ux">
-        <div class="container">
-            <img class="event__image" src="images/ui-ux.png" alt="UI/UX">
-            <div class="event__details event__details--left">
+    <section class="event event--ui-ux event--left">
+        <div class="container" data-aos="fade-left">
+            <div class="event__details">
                 <h2 class="event__details__title">UI/UX</h2>
                 <p class="event__details__description">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, maiores tenetur optio necessitatibus deleniti placeat sit molestiae a, animi nulla temporibus ipsam eos dolor odit modi quo. Est, deleniti ut!
                     Aspernatur repudiandae hic nobis magni eveniet non a? Consectetur nulla aperiam dolor corporis? Iusto cumque sunt tenetur est ab, enim exercitationem eos, quod minus asperiores adipisci eveniet nesciunt repudiandae reprehenderit?
                 </p>
             </div>
+            <img class="event__image" src="images/ui-ux.png" alt="UI/UX">
         </div>
     </section>
     <section class="event event--data-science">
-        <div class="container">
+        <div class="container" data-aos="fade-right">
             <div class="event__details">
                 <h2 class="event__details__title">Data Science</h2>
                 <p class="event__details__description">
@@ -74,23 +74,20 @@
             <img class="event__image" src="images/data.png" alt="Data Science">
         </div>
     </section>
-    <section class="event event--backend">
-        <div class="container">
-            <img class="event__image" src="images/backend.png" alt="Back-End">
-            <div class="event__details event__details--left">
+    <section class="event event--backend event--left">
+        <div class="container" data-aos="fade-left">
+            <div class="event__details">
                 <h2 class="event__details__title">Back-End</h2>
                 <p class="event__details__description">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, maiores tenetur optio necessitatibus deleniti placeat sit molestiae a, animi nulla temporibus ipsam eos dolor odit modi quo. Est, deleniti ut!
                     Aspernatur repudiandae hic nobis magni eveniet non a? Consectetur nulla aperiam dolor corporis? Iusto cumque sunt tenetur est ab, enim exercitationem eos, quod minus asperiores adipisci eveniet nesciunt repudiandae reprehenderit?
                 </p>
             </div>
+            <img class="event__image" src="images/backend.png" alt="Back-End">
         </div>
     </section>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
     <script src="scripts/main.js"></script>
 </body>
 </html>
