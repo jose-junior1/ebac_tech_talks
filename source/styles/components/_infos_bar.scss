@@ -1,0 +1,43 @@
+@use '../colors';
+
+.infos-bar {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 24px;
+    background-color: colors.$colorText;
+
+    
+    &__infos {   
+        display: flex;
+        gap: 40px;
+        
+        &__item {
+            font-size: 14px;
+            color: colors.$colorTextSecondary;
+            
+            b {
+                color: colors.$colorTextSecondary;
+                display: block;
+                font-size: 18px;
+            }
+        }
+    }
+    
+    @media (max-width: 640px) {
+        display: block;
+        
+        &__infos {
+            display: block;
+
+            &__item {
+                margin-bottom: 24px;
+            }
+        }
+    }
+
+    @media (max-width: 1024px) {
+        &__infos {
+            gap: 16px;
+        }
+    }
+}
